@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 
-import { cv, github } from '../../assets/icons';
+import { github } from '../../assets/icons';
 import { Header } from './components';
 import styles from './Wrapper.module.scss';
 
@@ -22,7 +22,7 @@ export const Wrapper: FC = () => {
 
       <footer>
         <div>
-          <p>Тестовый проект крипто-калькулятора с подгрузкой данных онлайн.</p>
+          <p>Проект крипто-кошелька с подгрузкой данных онлайн.</p>
           <p>
             В проекте использовались TypeScript, React, React-Router, Custom Hooks, Redux, SCSS,
             Axios.
@@ -41,11 +41,8 @@ export const Wrapper: FC = () => {
         </div>
 
         <div className={styles.page__links}>
-          <a href="https://github.com/mishken3" target="_blank">
+          <a href="https://github.com/KuznetsovAG" target="_blank">
             <img src={github} alt="Icon to my GitHub" />
-          </a>
-          <a href="https://mishken.vercel.app/cv" target="_blank">
-            <img src={cv} alt="Icon to my CV" />
           </a>
         </div>
       </footer>
